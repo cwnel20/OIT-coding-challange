@@ -1,5 +1,6 @@
 # OIT-coding-challange
 I did not have a lot of options for terminals to make the code so I used an online python terminal called onecomplier.com
+https://onecompiler.com/python
 
 I didn't have any notes to be entirly honest, I just kinda used simple if else statements to make it work.
 
