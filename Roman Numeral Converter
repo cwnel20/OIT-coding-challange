@@ -1,0 +1,171 @@
+numeral1 = str(input())
+numeral2 = str(input())
+numeral3 = str(input())
+numeral4 = str(input())
+
+thousand = int(input())
+hundred = int(input())
+ten = int(input())
+one = int(input())
+
+print('Numerals to Numbers:')
+
+def convert_numeral1():
+    if numeral1 == 'MMM' :
+        return(int(3))
+    elif numeral1 == 'MM' :
+        return(int(2))
+    elif numeral1 == 'M' :
+        return(int(1))
+    else :
+        return(0)
+
+def convert_numeral2():
+    if numeral2 == 'CM' :
+        return(int(9))
+    elif numeral2 == 'DCCC' :
+        return(int(8))
+    elif numeral2 == 'DCC' :
+        return(int(7))
+    elif numeral2 == 'DC' :
+        return(int(6))
+    elif numeral2 == 'D' :
+        return(int(5))
+    elif numeral2 == 'CD' :
+        return(int(4))
+    elif numeral2 == 'CCC' :
+        return(int(3))
+    elif numeral2 == 'CC' :
+        return(int(2))
+    elif numeral2 == 'C' :
+        return(int(1))
+    else :
+        return(0)
+
+def convert_numeral3():
+    if numeral3 == 'XC' :
+        return(int(9))
+    elif numeral3 == 'LXXX' :
+        return(int(8))
+    elif numeral3 == 'LXX' :
+        return(int(7))
+    elif numeral3 == 'LX' :
+        return(int(6))
+    elif numeral3 == 'L' :
+        return(int(5))
+    elif numeral3 == 'XL' :
+        return(int(4))
+    elif numeral3 == 'XXX' :
+        return(int(3))
+    elif numeral3 == 'XX' :
+        return(int(2))
+    elif numeral3 == 'X' :
+        return(int(1))
+    else :
+        return(0)
+
+def convert_numeral4():
+    if numeral4 == 'IX' :
+        return(int(9))
+    elif numeral4 == 'VIII' :
+        return(int(8))
+    elif numeral4 == 'VII' :
+        return(int(7))
+    elif numeral4 == 'VI' :
+        return(int(6))
+    elif numeral4 == 'V' :
+        return(int(5))
+    elif numeral4 == 'IV' :
+        return(int(4))
+    elif numeral4 == 'III' :
+        return(int(3))
+    elif numeral4 == 'II' :
+        return(int(2))
+    elif numeral4 == 'I' :
+        return(int(1))
+    else :
+        return(0)
+
+print(convert_numeral1(),convert_numeral2(),
+convert_numeral3(),convert_numeral4())
+
+print('Numbers to Numerals:')
+
+def convert_thousand():
+    if thousand == 3 :
+        return('MMM')
+    elif thousand == 2 :
+        return('MM')
+    elif thousand == 1 :
+        return('M')
+    else :
+        return(0)
+
+def convert_hundred():
+    if hundred == 9 :
+        return('CM')
+    elif hundred == 8 :
+        return('DCCC')
+    elif hundred == 7 :
+        return('DCC')
+    elif hundred == 6 :
+        return('DC')
+    elif hundred == 5 :
+        return('D')
+    elif hundred == 4 :
+        return('CD')
+    elif hundred == 3 :
+        return('CCC')
+    elif hundred == 2 :
+        return('CC')
+    elif hundred == 1 :
+        return('C')
+    else :
+        return(0)
+
+def convert_ten():  
+    if ten == 9 :
+        return('XC')
+    elif ten == 8 :
+        return('LXXX')
+    elif ten == 7 :
+        return('LXX')
+    elif ten == 6 :
+        return('LX')
+    elif ten == 5 :
+        return('L')
+    elif ten == 4 :
+        return('XL')
+    elif ten == 3 :
+        return('XXX')
+    elif ten == 2 :
+        return('XX')
+    elif ten == 1 :
+        return('X')
+    else :
+        return(0)
+
+def convert_one():
+    if one == 9 :
+        return('IX')
+    elif one == 8 :
+        return('VIII')
+    elif one == 7 :
+        return('VII')
+    elif one == 6 :
+        return('VI')
+    elif one == 5 :
+        return('V')
+    elif one == 4 :
+        return('IV')
+    elif one == 3 :
+        return('III')
+    elif one == 2 :
+        return('II')
+    elif one == 1 :
+        return('I')
+    else :
+        return(0)
+
+print(convert_thousand(),convert_hundred(),
+    convert_ten(),convert_one())
